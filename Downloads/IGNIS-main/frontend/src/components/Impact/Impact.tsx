@@ -147,20 +147,6 @@ const Impact = () => {
                     <div className="impact-footer">
                         <div className="impact-footer-line"></div>
                         <span className="impact-footer-text">Academic year 2025-2026</span>
-                        
-                        <div className="impact-dots-bg">
-                            <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="rgba(184, 29, 34, 0.15)" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
-                                <circle cx="4" cy="4" r="1"></circle>
-                                <circle cx="12" cy="4" r="1"></circle>
-                                <circle cx="20" cy="4" r="1"></circle>
-                                <circle cx="4" cy="12" r="1"></circle>
-                                <circle cx="12" cy="12" r="1"></circle>
-                                <circle cx="20" cy="12" r="1"></circle>
-                                <circle cx="4" cy="20" r="1"></circle>
-                                <circle cx="12" cy="20" r="1"></circle>
-                                <circle cx="20" cy="20" r="1"></circle>
-                            </svg>
-                        </div>
                     </div>
                 </div>
                 <div className="impact-right">
