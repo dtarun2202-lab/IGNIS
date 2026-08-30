@@ -30,3 +30,52 @@
     pointer-events: none;
     z-index: 1;
 }
+
+.sdg-text-content {
+    max-width: 480px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 15;
+    margin-top: -300px; /* Lifts the text up to avoid overlap */
+}
+
+.sdg-subtitle {
+    color: #b81d22;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.sdg-title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 42px;
+    line-height: 1.25;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #1a233a;
+    letter-spacing: -0.5px;
+}
+
+.sdg-separator {
+    width: 60px;
+    height: 3px;
+    background-color: #f1a5a8;
+    margin-bottom: 25px;
+}
+
+.sdg-description {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
