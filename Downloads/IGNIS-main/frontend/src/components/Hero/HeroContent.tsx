@@ -26,7 +26,7 @@ const HeroContent = () => {
             <div className="hero-links">
                 <Link to="/story" className="hero-link">OUR STORY <span className="arrow">&rarr;</span></Link>
                 <div className="hero-link-separator"></div>
-                <Link to="/impact" className="hero-link">OUR IMPACT <span className="arrow">&rarr;</span></Link>
+                <Link to="/impact" className="hero-link hero-link-black">OUR IMPACT <span className="arrow">&rarr;</span></Link>
             </div>
         </div>
     );

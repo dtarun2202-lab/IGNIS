@@ -90,6 +90,10 @@
     letter-spacing: 0.5px;
 }
 
+.hero-link-black {
+    color: #111;
+}
+
 .hero-link .arrow {
     font-size: 16px;
 }
@@ -135,17 +139,19 @@
 .action-card-icon {
     margin-right: 20px;
     z-index: 2;
-    background: rgba(255, 255, 255, 0.15);
-    padding: 14px;
-    border-radius: 10px;
+    background: #ffffff;
+    color: #b81d22;
+    padding: 18px;
+    border-radius: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
 .action-card-icon svg {
-    width: 28px;
-    height: 28px;
+    width: 32px;
+    height: 32px;
 }
 
 .action-card-content {
