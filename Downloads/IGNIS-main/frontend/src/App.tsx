@@ -5,6 +5,8 @@ import Hero from './components/Hero/Hero';
 import NotFound from './pages/NotFound';
 import Impact from './components/Impact/Impact';
 import SdgSection from './components/SdgSection/SdgSection';
+import TeamSection from './components/TeamSection/TeamSection';
+import Footer from './components/Footer/Footer';
 
 function App() {
     return (
@@ -17,6 +19,8 @@ function App() {
                             <Hero />
                             <Impact />
                             <SdgSection />
+                            <TeamSection />
+                            <Footer />
                         </div>
                     } />
                     <Route path="*" element={<NotFound />} />
