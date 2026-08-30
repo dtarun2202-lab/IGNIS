@@ -163,4 +163,31 @@
     letter-spacing: 0.5px;
 }
 
+.impact-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.impact-map-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+    /* Adding a subtle shadow makes it blend well on the off-white background */
+    filter: drop-shadow(0 10px 30px rgba(0,0,0,0.05));
+    animation: fadeUp 1s ease-out forwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

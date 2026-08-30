@@ -5,8 +5,9 @@ import Hero from './components/Hero/Hero';
 import NotFound from './pages/NotFound';
 import Impact from './components/Impact/Impact';
 import SdgSection from './components/SdgSection/SdgSection';
-import TeamSection from './components/TeamSection/TeamSection';
+import TestimonialSection from './components/TestimonialSection/TestimonialSection';
 import Footer from './components/Footer/Footer';
+import OurTeam from './pages/OurTeam/OurTeam';
 
 function App() {
     return (
@@ -19,10 +20,11 @@ function App() {
                             <Hero />
                             <Impact />
                             <SdgSection />
-                            <TeamSection />
+                            <TestimonialSection />
                             <Footer />
                         </div>
                     } />
+                    <Route path="/our-team" element={<OurTeam />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </div>

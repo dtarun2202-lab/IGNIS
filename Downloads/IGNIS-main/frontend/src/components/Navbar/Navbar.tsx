@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import "./Navbar.css";
 
+import ignisLogo from '../../assets/logos/ignis-logo.jpg';
+
 const Navbar = () => {
     const [isHidden, setIsHidden] = useState(false);
     const prevScrollY = React.useRef(0);
@@ -56,16 +58,15 @@ const Navbar = () => {
             <div className="navbar-container">
                 {/* Logo */}
                 <Link to="/" className="navbar-logo">
-                    <span className="logo-title">IGNIS</span>
-                    <span className="logo-subtitle">inspired learning</span>
+                    <img src={ignisLogo} alt="IGNIS" className="navbar-logo-img" />
                 </Link>
 
-                {/* Navigation */}
                 <nav className="navbar-links">
                     <Link to="/about">ABOUT US</Link>
                     <Link to="/for-schools">FOR SCHOOLS</Link>
                     <Link to="/csr-support">CSR SUPPORT</Link>
                     <Link to="/studies-reports">STUDIES & REPORTS</Link>
+                    <Link to="/our-team">OUR TEAM</Link>
                     <Link to="/contact">CONTACT US</Link>
                 </nav>
 

@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './Impact.css';
+import mapImage from '../../assets/images/our-reach-map.png';
 
 // Simple custom hook for animated counting
 const useCountUp = (end: number, duration: number = 2000) => {
@@ -150,7 +151,7 @@ const Impact = () => {
                     </div>
                 </div>
                 <div className="impact-right">
-                    {/* Map section will go here later */}
+                    <img src={mapImage} alt="Our Reach Map" className="impact-map-image" />
                 </div>
             </div>
         </section>
