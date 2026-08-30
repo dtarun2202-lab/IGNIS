@@ -16,13 +16,12 @@ body {
 }
 
 .home-snap-container {
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+    /* Snap scroll disabled */
     scroll-behavior: smooth;
     scroll-padding-top: 67px; /* height of navbar to prevent overlap */
 }
 
 .home-snap-section {
-    scroll-snap-align: start;
+    /* Snap scroll disabled */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
