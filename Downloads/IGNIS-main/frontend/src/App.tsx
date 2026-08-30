@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import NotFound from './pages/NotFound';
 import Impact from './components/Impact/Impact';
+import SdgSection from './components/SdgSection/SdgSection';
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                             <Navbar />
                             <Hero />
                             <Impact />
+                            <SdgSection />
                         </div>
                     } />
                     <Route path="*" element={<NotFound />} />
