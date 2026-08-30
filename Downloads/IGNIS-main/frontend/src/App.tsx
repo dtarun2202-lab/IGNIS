@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import NotFound from './pages/NotFound';
+import Impact from './components/Impact/Impact';
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
                         <>
                             <Navbar />
                             <Hero />
+                            <Impact />
                         </>
                     } />
                     <Route path="*" element={<NotFound />} />
