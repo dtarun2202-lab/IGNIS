@@ -5,18 +5,21 @@ import sdgBg from '../../assets/images/sdg4.png';
 // Media Logos
 import inc42 from '../../assets/images/media-logos/inc-42.png';
 import edtech from '../../assets/images/media-logos/edu-tech-review.jpg';
-import et from '../../assets/images/media-logos/economic-times.jpg';
+import et from '../../assets/images/media-logos/economic-times.webp';
 import bw from '../../assets/images/media-logos/BW-education.png';
-import yourstory from '../../assets/images/media-logos/your-story.jpg';
-import tt from '../../assets/images/media-logos/Telangana-Today.jpg';
+import yourstory from '../../assets/images/media-logos/your-story.png';
+import tt from '../../assets/images/media-logos/Telangana-Today.png';
 import manorama from '../../assets/images/media-logos/On-Manorama.png';
 import bline from '../../assets/images/media-logos/Business-Line.jpg';
+import bstandard from '../../assets/images/media-logos/Business-Standard.png';
+import cnbc from '../../assets/images/media-logos/cbnc.png';
+import etv from '../../assets/images/media-logos/etv.jpg';
 
 const SdgSection = () => {
     return (
         <section className="sdg-section home-snap-section">
             <div 
-                className="sdg-bg-image" 
+                className="sdg-bg-image"
                 style={{ backgroundImage: `url(${sdgBg})` }}
             ></div>
 
@@ -51,23 +54,29 @@ const SdgSection = () => {
                     <div className="carousel-track">
                         {/* First set of logos */}
                         <img src={inc42} alt="Inc42" />
-                        <img src={edtech} alt="EdTechReview" />
-                        <img src={et} alt="Economic Times" />
+                        <img src={edtech} alt="EdTechReview" className="logo-edtech" />
+                        <img src={et} alt="Economic Times" className="logo-et" />
                         <img src={bw} alt="BW Education" />
                         <img src={yourstory} alt="YourStory" />
                         <img src={tt} alt="Telangana Today" />
-                        <img src={manorama} alt="On Manorama" />
+                        <img src={manorama} alt="On Manorama" className="logo-manorama" />
                         <img src={bline} alt="Business Line" />
+                        <img src={bstandard} alt="Business Standard" />
+                        <img src={cnbc} alt="CNBC" />
+                        <img src={etv} alt="ETV" />
                         
                         {/* Second set of logos for seamless infinite scrolling */}
                         <img src={inc42} alt="Inc42" />
-                        <img src={edtech} alt="EdTechReview" />
-                        <img src={et} alt="Economic Times" />
+                        <img src={edtech} alt="EdTechReview" className="logo-edtech" />
+                        <img src={et} alt="Economic Times" className="logo-et" />
                         <img src={bw} alt="BW Education" />
                         <img src={yourstory} alt="YourStory" />
                         <img src={tt} alt="Telangana Today" />
-                        <img src={manorama} alt="On Manorama" />
+                        <img src={manorama} alt="On Manorama" className="logo-manorama" />
                         <img src={bline} alt="Business Line" />
+                        <img src={bstandard} alt="Business Standard" />
+                        <img src={cnbc} alt="CNBC" />
+                        <img src={etv} alt="ETV" />
                     </div>
                 </div>
             </div>
