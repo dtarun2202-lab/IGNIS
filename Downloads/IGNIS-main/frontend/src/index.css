@@ -19,7 +19,8 @@ body {
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
-    scroll-padding-top: 75px; /* height of navbar to prevent overlap */
+    scroll-behavior: smooth;
+    scroll-padding-top: 67px; /* height of navbar to prevent overlap */
 }
 
 .home-snap-section {
