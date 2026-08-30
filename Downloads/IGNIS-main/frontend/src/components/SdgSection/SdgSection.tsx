@@ -48,25 +48,27 @@ const SdgSection = () => {
                 </div>
                 
                 <div className="media-carousel-wrapper">
-                    <button className="carousel-btn left">&lt;</button>
                     <div className="carousel-track">
+                        {/* First set of logos */}
                         <img src={inc42} alt="Inc42" />
-                        <div className="carousel-divider"></div>
                         <img src={edtech} alt="EdTechReview" />
-                        <div className="carousel-divider"></div>
                         <img src={et} alt="Economic Times" />
-                        <div className="carousel-divider"></div>
                         <img src={bw} alt="BW Education" />
-                        <div className="carousel-divider"></div>
                         <img src={yourstory} alt="YourStory" />
-                        <div className="carousel-divider"></div>
                         <img src={tt} alt="Telangana Today" />
-                        <div className="carousel-divider"></div>
                         <img src={manorama} alt="On Manorama" />
-                        <div className="carousel-divider"></div>
+                        <img src={bline} alt="Business Line" />
+                        
+                        {/* Second set of logos for seamless infinite scrolling */}
+                        <img src={inc42} alt="Inc42" />
+                        <img src={edtech} alt="EdTechReview" />
+                        <img src={et} alt="Economic Times" />
+                        <img src={bw} alt="BW Education" />
+                        <img src={yourstory} alt="YourStory" />
+                        <img src={tt} alt="Telangana Today" />
+                        <img src={manorama} alt="On Manorama" />
                         <img src={bline} alt="Business Line" />
                     </div>
-                    <button className="carousel-btn right">&gt;</button>
                 </div>
             </div>
         </section>

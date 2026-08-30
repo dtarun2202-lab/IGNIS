@@ -79,3 +79,128 @@
     line-height: 1.6;
     margin: 0;
 }
+
+/* Media Recognition Banner */
+.media-recognition-banner {
+    position: absolute;
+    bottom: 120px;
+    left: 40px;
+    right: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 25px 40px;
+    z-index: 20;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.media-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.media-subtitle {
+    display: flex;
+    align-items: center;
+    color: #b81d22;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-family: 'Inter', sans-serif;
+    gap: 15px;
+    flex: 1;
+}
+
+.media-line {
+    width: 40px;
+    height: 2px;
+    background-color: #f1a5a8;
+}
+
+.media-title {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-family: 'Manrope', sans-serif;
+    color: #1a233a;
+    font-size: 18px;
+    font-weight: 800;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.media-placeholder {
+    flex: 1;
+}
+
+.leaf-icon {
+    opacity: 0.6;
+    color: #e44249;
+}
+
+.right-leaf {
+    transform: scaleX(-1);
+}
+
+.media-carousel-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 0;
+}
+
+/* Gradient fades on the edges for a smoother marquee effect */
+.media-carousel-wrapper::before,
+.media-carousel-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    z-index: 2;
+}
+
+.media-carousel-wrapper::before {
+    left: 0;
+    background: linear-gradient(to right, white, transparent);
+}
+
+.media-carousel-wrapper::after {
+    right: 0;
+    background: linear-gradient(to left, white, transparent);
+}
+
+.carousel-track {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+}
+
+.carousel-track:hover {
+    animation-play-state: paused;
+}
+
+.carousel-track img {
+    height: 45px;
+    max-width: 180px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Moves exactly half the width (which is one full set of logos) */
+    }
+}
