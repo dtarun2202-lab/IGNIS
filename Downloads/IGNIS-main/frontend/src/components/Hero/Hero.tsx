@@ -1,4 +1,6 @@
 import React from 'react';
+import HeroContent from './HeroContent';
+import HeroActions from './HeroActions';
 import './Hero.css';
 
 const Hero = () => {
@@ -6,19 +8,11 @@ const Hero = () => {
         <section className="hero">
             <div className="hero-container">
                 <div className="hero-left">
-                    {/* Content will go here later */}
+                    <HeroContent />
+                    <HeroActions />
                 </div>
                 <div className="hero-right">
-                    <div className="story-carousel">
-                        <div className="carousel-slide active-slide">
-                            {/* The Main Hero Background Image */}
-                            <img 
-                                src="https://images.unsplash.com/photo-1594498653385-d5172c532c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                                alt="Hero Background" 
-                                className="slide-image"
-                            />
-                        </div>
-                    </div>
+                    {/* Image removed for now */}
                 </div>
             </div>
         </section>
