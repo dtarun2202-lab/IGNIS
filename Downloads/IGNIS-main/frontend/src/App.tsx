@@ -11,11 +11,11 @@ function App() {
             <div className="app">
                 <Routes>
                     <Route path="/" element={
-                        <>
+                        <div className="home-snap-container">
                             <Navbar />
                             <Hero />
                             <Impact />
-                        </>
+                        </div>
                     } />
                     <Route path="*" element={<NotFound />} />
                 </Routes>

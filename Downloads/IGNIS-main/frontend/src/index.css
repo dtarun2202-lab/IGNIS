@@ -14,3 +14,14 @@ body {
 * {
     box-sizing: border-box;
 }
+
+.home-snap-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 75px; /* height of navbar to prevent overlap */
+}
+
+.home-snap-section {
+    scroll-snap-align: start;
+}

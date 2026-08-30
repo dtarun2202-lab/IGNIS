@@ -1,5 +1,5 @@
 .hero {
-    padding: 60px 40px;
+    padding: 30px 40px;
     background-color: #fafafa;
 }
 
@@ -28,7 +28,7 @@
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .hero-subtitle {
@@ -50,7 +50,7 @@
     line-height: 1.1;
     font-weight: 700;
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     letter-spacing: -1px;
 }
 
@@ -68,7 +68,7 @@
     font-size: 16px;
     color: #444;
     line-height: 1.6;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     max-width: 95%;
 }
 
@@ -76,7 +76,7 @@
     display: flex;
     gap: 25px;
     align-items: center;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
 }
 
 .hero-link {

@@ -75,7 +75,7 @@ const StatItem = ({ icon, endValue, label, suffix = '+' }: { icon: React.ReactNo
 
 const Impact = () => {
     return (
-        <section className="impact-section">
+        <section className="impact-section home-snap-section">
             <div className="impact-container">
                 <div className="impact-left">
                     <div className="impact-subtitle-wrapper">
