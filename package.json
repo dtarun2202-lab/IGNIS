@@ -20,7 +20,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite frontend",
-    "build": "vite build frontend",
+    "build": "vite build frontend --outDir ../dist",
     "preview": "vite preview frontend"
   },
   "keywords": [],
