@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import HeroContent from './HeroContent';
 import HeroActions from './HeroActions';
 import './Hero.css';
-import slide1 from '../../assets/images/hero-1.png';
-import slide2 from '../../assets/images/hero-2.png';
-import slide3 from '../../assets/images/hero-3.png';
-import slide4 from '../../assets/images/hero-4.png';
-import slide5 from '../../assets/images/hero-5.png';
+import slide1 from '../../assets/images/hero6.png';
+import slide2 from '../../assets/images/hero-7.png';
+import slide3 from '../../assets/images/hero-8.png';
+import slide4 from '../../assets/images/hero-9.png';
+import slide5 from '../../assets/images/hero-10.png';
 
 const slides = [slide1, slide2, slide3, slide4, slide5];
 

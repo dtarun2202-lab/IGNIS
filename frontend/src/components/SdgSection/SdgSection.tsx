@@ -31,9 +31,15 @@ const SdgSection = () => {
     return (
         <section className="sdg-section home-snap-section">
             <div 
-                className="sdg-bg-image"
+                className="sdg-bg-image desktop-sdg-bg"
                 style={{ backgroundImage: `url(${sdgBg})` }}
             ></div>
+
+            <img 
+                src={sdgBg} 
+                alt="SDG Impact Graphic" 
+                className="mobile-sdg-image" 
+            />
 
             <div className="sdg-container">
                 <div className="sdg-text-content">
