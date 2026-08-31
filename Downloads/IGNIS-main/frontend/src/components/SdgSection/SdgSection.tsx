@@ -64,31 +64,34 @@ const SdgSection = () => {
                 
                 <div className="media-carousel-wrapper">
                     <div className="carousel-track">
-                        {/* First set of logos */}
-                        <img src={inc42} alt="Inc42" />
-                        <img src={edtech} alt="EdTechReview" className="logo-edtech" />
-                        <img src={et} alt="Economic Times" className="logo-et" />
-                        <img src={bw} alt="BW Education" />
-                        <img src={yourstory} alt="YourStory" />
-                        <img src={tt} alt="Telangana Today" />
-                        <img src={manorama} alt="On Manorama" className="logo-manorama" />
-                        <img src={bline} alt="Business Line" />
-                        <img src={bstandard} alt="Business Standard" />
-                        <img src={cnbc} alt="CNBC" />
-                        <img src={etv} alt="ETV" />
-                        
-                        {/* Second set of logos for seamless infinite scrolling */}
-                        <img src={inc42} alt="Inc42" />
-                        <img src={edtech} alt="EdTechReview" className="logo-edtech" />
-                        <img src={et} alt="Economic Times" className="logo-et" />
-                        <img src={bw} alt="BW Education" />
-                        <img src={yourstory} alt="YourStory" />
-                        <img src={tt} alt="Telangana Today" />
-                        <img src={manorama} alt="On Manorama" className="logo-manorama" />
-                        <img src={bline} alt="Business Line" />
-                        <img src={bstandard} alt="Business Standard" />
-                        <img src={cnbc} alt="CNBC" />
-                        <img src={etv} alt="ETV" />
+                        <div className="logo-group">
+                            {/* First set of logos */}
+                            <img src={inc42} alt="Inc42" />
+                            <img src={edtech} alt="EdTechReview" className="logo-edtech" />
+                            <img src={et} alt="Economic Times" className="logo-et" />
+                            <img src={bw} alt="BW Education" />
+                            <img src={yourstory} alt="YourStory" />
+                            <img src={tt} alt="Telangana Today" />
+                            <img src={manorama} alt="On Manorama" className="logo-manorama" />
+                            <img src={bline} alt="Business Line" />
+                            <img src={bstandard} alt="Business Standard" />
+                            <img src={cnbc} alt="CNBC" />
+                            <img src={etv} alt="ETV" />
+                        </div>
+                        <div className="logo-group">
+                            {/* Second set of logos for seamless infinite scrolling */}
+                            <img src={inc42} alt="Inc42" />
+                            <img src={edtech} alt="EdTechReview" className="logo-edtech" />
+                            <img src={et} alt="Economic Times" className="logo-et" />
+                            <img src={bw} alt="BW Education" />
+                            <img src={yourstory} alt="YourStory" />
+                            <img src={tt} alt="Telangana Today" />
+                            <img src={manorama} alt="On Manorama" className="logo-manorama" />
+                            <img src={bline} alt="Business Line" />
+                            <img src={bstandard} alt="Business Standard" />
+                            <img src={cnbc} alt="CNBC" />
+                            <img src={etv} alt="ETV" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -104,30 +107,33 @@ const SdgSection = () => {
                 </div>
                 
                 <div className="media-carousel-wrapper">
-                    <div className="carousel-track">
-                        {/* First set of logos */}
-                        <img src={educateGirls} alt="Educate Girls" />
-                        <img src={evidya} alt="eVidyaloka" />
-                        <img src={etNow} alt="ET Now" />
-                        <img src={apssdp} alt="APSSDP" />
-                        <img src={htParekh} alt="HT Parekh Foundation" />
-                        <img src={millerCenter} alt="Miller Center" />
-                        <img src={iicIitK} alt="IIC IIT K" />
-                        <img src={acumen} alt="Acumen" />
-                        <img src={deshpande} alt="Deshpande Foundation" />
-                        <img src={yunnus} alt="YUNNUS" />
-
-                        {/* Second set of logos for seamless infinite scrolling */}
-                        <img src={educateGirls} alt="Educate Girls" />
-                        <img src={evidya} alt="eVidyaloka" />
-                        <img src={etNow} alt="ET Now" />
-                        <img src={apssdp} alt="APSSDP" />
-                        <img src={htParekh} alt="HT Parekh Foundation" />
-                        <img src={millerCenter} alt="Miller Center" />
-                        <img src={iicIitK} alt="IIC IIT K" />
-                        <img src={acumen} alt="Acumen" />
-                        <img src={deshpande} alt="Deshpande Foundation" />
-                        <img src={yunnus} alt="YUNNUS" />
+                    <div className="carousel-track-reverse">
+                        <div className="logo-group">
+                            {/* First set of logos */}
+                            <img src={educateGirls} alt="Educate Girls" />
+                            <img src={evidya} alt="eVidyaloka" />
+                            <img src={etNow} alt="ET Now" />
+                            <img src={apssdp} alt="APSSDP" />
+                            <img src={htParekh} alt="HT Parekh Foundation" />
+                            <img src={millerCenter} alt="Miller Center" />
+                            <img src={iicIitK} alt="IIC IIT K" />
+                            <img src={acumen} alt="Acumen" />
+                            <img src={deshpande} alt="Deshpande Foundation" />
+                            <img src={yunnus} alt="YUNNUS" />
+                        </div>
+                        <div className="logo-group">
+                            {/* Second set of logos for seamless infinite scrolling */}
+                            <img src={educateGirls} alt="Educate Girls" />
+                            <img src={evidya} alt="eVidyaloka" />
+                            <img src={etNow} alt="ET Now" />
+                            <img src={apssdp} alt="APSSDP" />
+                            <img src={htParekh} alt="HT Parekh Foundation" />
+                            <img src={millerCenter} alt="Miller Center" />
+                            <img src={iicIitK} alt="IIC IIT K" />
+                            <img src={acumen} alt="Acumen" />
+                            <img src={deshpande} alt="Deshpande Foundation" />
+                            <img src={yunnus} alt="YUNNUS" />
+                        </div>
                     </div>
                 </div>
             </div>

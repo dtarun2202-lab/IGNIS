@@ -202,8 +202,6 @@
 
 .carousel-track {
     display: flex;
-    align-items: center;
-    gap: 60px;
     width: max-content;
     animation: scroll 20s linear infinite;
 }
@@ -212,7 +210,24 @@
     animation-play-state: paused;
 }
 
-.carousel-track img {
+.logo-group {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding-right: 60px; /* Essential gap between the two identical groups to make scroll seamless */
+}
+
+.carousel-track-reverse {
+    display: flex;
+    width: max-content;
+    animation: scroll-right 20s linear infinite;
+}
+
+.carousel-track-reverse:hover {
+    animation-play-state: paused;
+}
+
+.carousel-track img, .carousel-track-reverse img {
     height: 60px;
     object-fit: contain;
     mix-blend-mode: multiply;
@@ -220,17 +235,17 @@
     transform-origin: center;
 }
 
-.carousel-track img.logo-manorama {
+.carousel-track img.logo-manorama, .carousel-track-reverse img.logo-manorama {
     height: 45px;
     transform: scale(0.95);
 }
 
-.carousel-track img.logo-edtech {
+.carousel-track img.logo-edtech, .carousel-track-reverse img.logo-edtech {
     height: 35px;
     transform: scale(0.85);
 }
 
-.carousel-track img.logo-et {
+.carousel-track img.logo-et, .carousel-track-reverse img.logo-et {
     transform: scale(1.6);
 }
 
@@ -239,6 +254,15 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-50%); /* Moves exactly half the width (which is one full set of logos) */
+        transform: translateX(-50%); /* Moves exactly one full group width since there are two groups */
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-50%); /* Start offset by one group */
+    }
+    100% {
+        transform: translateX(0); /* Scroll back to start for rightward motion */
     }
 }
