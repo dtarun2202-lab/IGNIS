@@ -204,7 +204,7 @@
     max-width: 600px;
     height: 700px;
     border-radius: 20px;
-    margin: 0 auto;
+    margin: -20px auto 0;
 }
 
 .carousel-slide {
@@ -324,12 +324,14 @@
     top: 0;
     left: 0;
     opacity: 0;
-    animation: autoSwipe 15s infinite ease-in-out;
+    animation: autoSwipe 25s infinite ease-in-out;
 }
 
 .card-1 { animation-delay: 0s; }
 .card-2 { animation-delay: 5s; }
 .card-3 { animation-delay: 10s; }
+.card-4 { animation-delay: 15s; }
+.card-5 { animation-delay: 20s; }
 
 .placeholder-image {
     width: 100%;
@@ -354,8 +356,8 @@
 
 @keyframes autoSwipe {
     0% { transform: translateX(100%); opacity: 0; }
-    5% { transform: translateX(0); opacity: 1; }
-    30% { transform: translateX(0); opacity: 1; }
-    35% { transform: translateX(-100%); opacity: 0; }
+    2.5% { transform: translateX(0); opacity: 1; }
+    17.5% { transform: translateX(0); opacity: 1; }
+    20% { transform: translateX(-100%); opacity: 0; }
     100% { transform: translateX(-100%); opacity: 0; }
 }
