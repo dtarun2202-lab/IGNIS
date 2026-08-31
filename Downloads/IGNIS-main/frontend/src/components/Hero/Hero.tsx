@@ -4,6 +4,7 @@ import HeroActions from './HeroActions';
 import './Hero.css';
 import slide1 from '../../assets/images/hero-slide-1.png';
 import slide2 from '../../assets/images/hero-slide-2.png';
+import slide3 from '../../assets/images/hero-slide-4.png';
 
 const Hero = () => {
     return (
@@ -22,9 +23,7 @@ const Hero = () => {
                             <img src={slide2} alt="Classroom learning" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '20px' }} />
                         </div>
                         <div className="carousel-slide swipe-card card-3">
-                            <div className="placeholder-image bg-dark">
-                                <div className="placeholder-text">Image Placeholder 3</div>
-                            </div>
+                            <img src={slide3} alt="Community program" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '20px' }} />
                         </div>
                     </div>
                 </div>
