@@ -192,6 +192,11 @@
     }
 }
 
+/* New Mobile-Only Elements Hidden on Desktop */
+.mobile-only-reach, .mobile-only-states {
+    display: none;
+}
+
 /* Responsive Styles for Impact */
 
 /* Tablet */
@@ -221,7 +226,7 @@
     
     .impact-container {
         flex-direction: column;
-        gap: 40px;
+        gap: 50px; /* More breathing room between sections */
         width: 100%;
     }
     
@@ -238,34 +243,83 @@
     .impact-description {
         font-size: 15px;
         max-width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 40px; /* More space before stats */
     }
     
+    /* 2-Column Stats Redesign */
     .impact-stats {
-        gap: 20px;
-        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px 15px;
+        margin-bottom: 40px;
     }
     
     .stat-item {
-        gap: 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+        align-items: center;
     }
     
     .stat-icon-wrapper {
-        width: 50px;
-        height: 50px;
+        width: 55px;
+        height: 55px;
     }
     
     .stat-icon-wrapper svg {
-        width: 24px;
-        height: 24px;
+        width: 26px;
+        height: 26px;
     }
     
     .stat-value {
-        font-size: 20px;
+        font-size: 18px;
+    }
+    
+    .stat-label {
+        font-size: 13px;
+    }
+    
+    .impact-footer {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    
+    /* Map & Reach Elements */
+    .mobile-only-reach {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
     }
     
     .impact-map-image {
+        width: 100%;
         max-width: 100%;
         height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .mobile-only-states {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+    }
+    
+    .mobile-only-states .states-number {
+        font-family: 'Manrope', sans-serif;
+        font-size: 36px;
+        font-weight: 800;
+        color: #b81d22;
+        line-height: 1;
+    }
+    
+    .mobile-only-states .states-text {
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        color: #111;
+        letter-spacing: 2px;
+        margin-top: 5px;
     }
 }
