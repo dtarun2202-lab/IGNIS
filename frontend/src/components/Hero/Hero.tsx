@@ -48,7 +48,7 @@ const Hero = () => {
 
                             return (
                                 <div className={`carousel-slide ${position}`} key={index}>
-                                    <img src={slide} alt={`Slide ${index + 1}`} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '20px' }} />
+                                    <img src={slide} alt={`Slide ${index + 1}`} className="carousel-image" />
                                 </div>
                             );
                         })}

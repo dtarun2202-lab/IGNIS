@@ -38,6 +38,13 @@
     margin-bottom: 20px;
 }
 
+.footer-logo-img {
+    height: 70px;
+    width: auto;
+    border-radius: 6px;
+    /* Removed mix-blend-mode so the logo displays its true colors */
+}
+
 .footer-tagline {
     font-size: 13px;
     line-height: 1.8;
@@ -184,6 +191,11 @@
     color: #ffffff;
 }
 
+/* Accordion Default State (Desktop) */
+.accordion-icon {
+    display: none;
+}
+
 /* Responsive Styles for Footer */
 
 /* Tablet */
@@ -229,5 +241,44 @@
     
     .legal-links a {
         margin: 0;
+    }
+
+    /* Mobile Accordion Styles */
+    .accordion-col {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .accordion-col h4 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        margin-bottom: 0;
+        padding: 15px 0;
+    }
+
+    .accordion-icon {
+        display: block;
+        font-size: 20px;
+        font-weight: 400;
+        transition: transform 0.3s ease;
+    }
+
+    .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+        opacity: 0;
+    }
+
+    .accordion-col.open .accordion-content {
+        max-height: 400px;
+        padding: 10px 0 20px 0;
+        opacity: 1;
+        transition: max-height 0.4s ease-in, padding 0.4s ease-in, opacity 0.5s ease-in;
+    }
+    
+    .accordion-col {
+        margin-bottom: -20px;
     }
 }
