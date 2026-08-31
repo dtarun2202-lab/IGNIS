@@ -151,7 +151,15 @@ const Impact = () => {
                     </div>
                 </div>
                 <div className="impact-right">
+                    <div className="mobile-only-reach impact-subtitle-wrapper">
+                        <span className="impact-subtitle">OUR REACH</span>
+                        <div className="impact-subtitle-line"></div>
+                    </div>
                     <img src={mapImage} alt="Our Reach Map" className="impact-map-image" />
+                    <div className="mobile-only-states">
+                        <span className="states-number">10+</span>
+                        <span className="states-text">STATES</span>
+                    </div>
                 </div>
             </div>
         </section>

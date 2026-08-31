@@ -97,3 +97,35 @@
     height: 350px;
     width: 100%;
 }
+
+/* Responsive Styles for Team Section */
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .team-section {
+        padding: 60px 20px;
+    }
+    
+    .team-title {
+        font-size: 36px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .team-section {
+        padding: 40px 20px;
+    }
+    
+    .team-title {
+        font-size: 30px;
+    }
+    
+    .team-description {
+        font-size: 15px;
+    }
+    
+    .team-carousel-placeholder {
+        height: 250px;
+    }
+}

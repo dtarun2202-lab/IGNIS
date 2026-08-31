@@ -197,3 +197,47 @@
     letter-spacing: 3px;
     margin-top: 4px;
 }
+
+/* Responsive Styles for Testimonials */
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .testimonial-section {
+        padding: 60px 20px;
+    }
+    
+    .testimonial-title {
+        font-size: 36px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .testimonial-section {
+        padding: 40px 20px;
+    }
+    
+    .testimonial-title {
+        font-size: 30px;
+    }
+    
+    .testimonial-description {
+        font-size: 15px;
+    }
+    
+    .testimonial-grid {
+        grid-template-columns: 1fr; /* Stack vertically on mobile */
+    }
+    
+    .testimonial-card {
+        padding: 25px 20px;
+    }
+    
+    .testimonial-card-title {
+        font-size: 18px;
+    }
+    
+    .testimonial-card-text {
+        font-size: 14px;
+    }
+}

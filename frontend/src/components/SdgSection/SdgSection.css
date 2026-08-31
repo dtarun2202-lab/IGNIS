@@ -266,3 +266,104 @@
         transform: translateX(0); /* Scroll back to start for rightward motion */
     }
 }
+
+/* Responsive Styles for SdgSection */
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .sdg-title {
+        font-size: 32px;
+    }
+    
+    .media-recognition-banner, .partners-banner {
+        left: 20px;
+        right: 20px;
+        padding: 10px 20px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .sdg-section {
+        flex-direction: column;
+        padding: 40px 20px 20px 20px;
+        min-height: auto;
+        justify-content: flex-start;
+        position: relative;
+    }
+    
+    .sdg-container {
+        order: 1;
+        margin-bottom: 30px;
+    }
+    
+    .sdg-text-content {
+        margin-top: 0;
+        padding-left: 0;
+        text-align: center;
+        align-items: center;
+        max-width: 100%;
+    }
+    
+    .sdg-title {
+        font-size: 28px;
+    }
+    
+    .sdg-bg-image {
+        position: relative;
+        order: 2;
+        width: 100%;
+        height: 300px;
+        background-size: contain;
+        margin-bottom: 40px;
+    }
+    
+    .media-recognition-banner, .partners-banner {
+        position: relative;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 15px;
+        order: 3;
+    }
+    
+    .media-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .media-subtitle {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .media-title {
+        font-size: 16px;
+    }
+    
+    .carousel-track img, .carousel-track-reverse img {
+        height: 40px;
+        transform: scale(1);
+    }
+    
+    .carousel-track img.logo-manorama, .carousel-track-reverse img.logo-manorama {
+        height: 30px;
+        transform: scale(0.9);
+    }
+
+    .carousel-track img.logo-edtech, .carousel-track-reverse img.logo-edtech {
+        height: 25px;
+        transform: scale(0.8);
+    }
+
+    .carousel-track img.logo-et, .carousel-track-reverse img.logo-et {
+        transform: scale(1.2);
+    }
+    
+    .logo-group {
+        gap: 30px;
+        padding-right: 30px;
+    }
+}

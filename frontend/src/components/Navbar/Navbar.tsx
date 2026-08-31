@@ -6,7 +6,12 @@ import ignisLogo from '../../assets/logos/ignis-logo.jpg';
 
 const Navbar = () => {
     const [isHidden, setIsHidden] = useState(false);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const prevScrollY = React.useRef(0);
+
+    const toggleMobileMenu = () => {
+        setIsMobileMenuOpen(!isMobileMenuOpen);
+    };
 
     useEffect(() => {
         const handleScroll = (e: Event) => {
@@ -61,19 +66,27 @@ const Navbar = () => {
                     <img src={ignisLogo} alt="IGNIS" className="navbar-logo-img" />
                 </Link>
 
-                <nav className="navbar-links">
-                    <Link to="/about">ABOUT US</Link>
-                    <Link to="/for-schools">FOR SCHOOLS</Link>
-                    <Link to="/csr-support">CSR SUPPORT</Link>
-                    <Link to="/studies-reports">STUDIES & REPORTS</Link>
-                    <Link to="/our-team">OUR TEAM</Link>
-                    <Link to="/contact">CONTACT US</Link>
-                </nav>
+                <div className="hamburger" onClick={toggleMobileMenu}>
+                    <span className={`bar ${isMobileMenuOpen ? 'open' : ''}`}></span>
+                    <span className={`bar ${isMobileMenuOpen ? 'open' : ''}`}></span>
+                    <span className={`bar ${isMobileMenuOpen ? 'open' : ''}`}></span>
+                </div>
 
-                {/* CTA */}
-                <Link to="/partner" className="navbar-cta">
-                    PARTNER WITH US <span className="arrow">&rarr;</span>
-                </Link>
+                <div className={`navbar-menu ${isMobileMenuOpen ? 'active' : ''}`}>
+                    <nav className="navbar-links">
+                        <Link to="/about" onClick={() => setIsMobileMenuOpen(false)}>ABOUT US</Link>
+                        <Link to="/for-schools" onClick={() => setIsMobileMenuOpen(false)}>FOR SCHOOLS</Link>
+                        <Link to="/csr-support" onClick={() => setIsMobileMenuOpen(false)}>CSR SUPPORT</Link>
+                        <Link to="/studies-reports" onClick={() => setIsMobileMenuOpen(false)}>STUDIES & REPORTS</Link>
+                        <Link to="/our-team" onClick={() => setIsMobileMenuOpen(false)}>OUR TEAM</Link>
+                        <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>CONTACT US</Link>
+                    </nav>
+
+                    {/* CTA */}
+                    <Link to="/partner" className="navbar-cta" onClick={() => setIsMobileMenuOpen(false)}>
+                        PARTNER WITH US <span className="arrow">&rarr;</span>
+                    </Link>
+                </div>
             </div>
         </header>
     );
