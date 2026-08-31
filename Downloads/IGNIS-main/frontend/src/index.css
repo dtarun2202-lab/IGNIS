@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #fcf6f7;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.home-snap-container {
+    /* Snap scroll disabled */
+    scroll-behavior: smooth;
+    scroll-padding-top: 67px; /* height of navbar to prevent overlap */
+}
+
+.home-snap-section {
+    /* Snap scroll disabled */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}

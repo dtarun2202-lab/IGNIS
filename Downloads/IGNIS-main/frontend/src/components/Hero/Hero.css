@@ -1,0 +1,280 @@
+.hero {
+    padding: 30px 40px;
+    background-color: #fcf6f7;
+}
+
+.hero-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.hero-left {
+    flex: 1;
+    max-width: 550px;
+}
+
+.hero-right {
+    flex: 1;
+    position: relative;
+    max-width: 600px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Hero Content */
+.hero-subtitle-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.hero-subtitle {
+    color: #b81d22;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.hero-subtitle-line {
+    width: 40px;
+    height: 2px;
+    background-color: #b81d22;
+}
+
+.hero-title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 64px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.hero-title-black {
+    color: #111;
+}
+
+.hero-title-red {
+    color: #b81d22;
+}
+
+.hero-description {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    max-width: 95%;
+}
+
+.hero-links {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.hero-link {
+    color: #b81d22;
+    font-weight: 700;
+    font-size: 13px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    letter-spacing: 0.5px;
+}
+
+.hero-link-black {
+    color: #111;
+}
+
+.hero-link .arrow {
+    font-size: 16px;
+}
+
+.hero-link-separator {
+    width: 1px;
+    height: 14px;
+    background-color: #ddd;
+}
+
+/* Hero Actions */
+.hero-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 480px;
+}
+
+.action-card {
+    display: flex;
+    align-items: center;
+    padding: 22px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.action-card:hover {
+    transform: translateY(-2px);
+}
+
+.action-card-primary {
+    background: linear-gradient(135deg, #b81d22 0%, #9a151b 100%);
+}
+
+.action-card-secondary {
+    background: linear-gradient(135deg, #a7181e 0%, #7c1115 100%);
+}
+
+.action-card-icon {
+    margin-right: 20px;
+    z-index: 2;
+    background: #ffffff;
+    color: #b81d22;
+    padding: 18px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.action-card-icon svg {
+    width: 32px;
+    height: 32px;
+}
+
+.action-card-content {
+    z-index: 2;
+    flex: 1;
+}
+
+.action-card-title {
+    margin: 0 0 6px 0;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: 0.5px;
+}
+
+.diagonal-arrow {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.action-card-desc {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    opacity: 0.9;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.action-card-bg-icon {
+    position: absolute;
+    right: -10px;
+    bottom: -20px;
+    z-index: 1;
+    opacity: 0.15;
+}
+
+.action-card-bg-icon svg {
+    width: 120px;
+    height: 120px;
+}
+
+.story-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 700px;
+    border-radius: 20px;
+    margin: -20px auto 0;
+}
+
+.carousel-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.activeSlide {
+    transform: translateX(0);
+    opacity: 1;
+    z-index: 2;
+}
+
+.prevSlide {
+    transform: translateX(-100%);
+    opacity: 0;
+    z-index: 1;
+}
+
+.nextSlide {
+    transform: translateX(100%);
+    opacity: 0;
+    z-index: 1;
+}
+
+/* Carousel Buttons */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    z-index: 10;
+    transition: background-color 0.2s, transform 0.2s;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.carousel-btn:hover {
+    background-color: #fff;
+    transform: translateY(-50%) scale(1.05);
+}
+
+.prev-btn {
+    left: -20px;
+}
+
+.next-btn {
+    right: -20px;
+}
+
+.auto-swipe-carousel {
+    position: relative;
+    border-radius: 20px;
+}
