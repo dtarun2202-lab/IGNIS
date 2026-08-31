@@ -1,7 +1,7 @@
 import React from 'react';
 import './SdgSection.css';
 import sdgBg from '../../assets/images/sdg4.png';
-import sdgMobileBg from '../../assets/images/sdg2-chart.png';
+import sdgMobileBg from '../../assets/images/sdg ch-1.png';
 
 // Media Logos
 import inc42 from '../../assets/images/media-logos/inc-42.png';

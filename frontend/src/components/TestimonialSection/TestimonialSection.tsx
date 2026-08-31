@@ -6,7 +6,11 @@ const TestimonialSection = () => {
         <section className="testimonial-section home-snap-section">
             <div className="testimonial-container">
                 <div className="testimonial-header-top">
-                    <span className="testimonial-subtitle">TESTIMONIALS <div className="testimonial-line"></div></span>
+                    <span className="testimonial-subtitle">
+                        <div className="testimonial-line"></div>
+                        TESTIMONIALS 
+                        <div className="testimonial-line"></div>
+                    </span>
                 </div>
                 
                 <div className="testimonial-header-center">
