@@ -20,7 +20,9 @@
 .hero-right {
     flex: 1;
     position: relative;
-    max-width: 700px;
+    max-width: 600px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* Hero Content */
@@ -196,12 +198,13 @@
     height: 120px;
 }
 
-/* Story Carousel */
 .story-carousel {
     position: relative;
-    height: 600px;
     width: 100%;
+    max-width: 600px;
+    height: 700px;
     border-radius: 20px;
+    margin: 0 auto;
 }
 
 .carousel-slide {
