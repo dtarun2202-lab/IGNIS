@@ -1,0 +1,99 @@
+.team-section {
+    padding: 80px 40px;
+    background-color: #fafafa;
+    position: relative;
+    /* Adding a faint red dot pattern background similar to the design */
+    background-image: radial-gradient(#f1a5a8 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.team-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-header-top {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.team-subtitle {
+    display: flex;
+    align-items: center;
+    color: #b81d22;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-family: 'Inter', sans-serif;
+    gap: 15px;
+}
+
+.team-line {
+    width: 40px;
+    height: 2px;
+    background-color: #e44249;
+}
+
+.team-header-center {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.team-title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+    color: #1a233a;
+    margin: 0 0 15px 0;
+}
+
+.team-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin: 0 0 25px 0;
+}
+
+.team-diamond-separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 200px;
+}
+
+.team-diamond-separator::before,
+.team-diamond-separator::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 1px;
+    background-color: #f1a5a8;
+}
+
+.team-diamond-separator::before {
+    left: 0;
+}
+
+.team-diamond-separator::after {
+    right: 0;
+}
+
+.diamond {
+    width: 8px;
+    height: 8px;
+    background-color: #e44249;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+.team-carousel-placeholder {
+    height: 350px;
+    width: 100%;
+}

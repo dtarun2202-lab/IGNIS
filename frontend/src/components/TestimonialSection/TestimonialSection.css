@@ -1,0 +1,199 @@
+.testimonial-section {
+    padding: 80px 40px;
+    background-color: #fafafa;
+    position: relative;
+    background-image: radial-gradient(#f1a5a8 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.testimonial-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-header-top {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.testimonial-subtitle {
+    display: flex;
+    align-items: center;
+    color: #b81d22;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-family: 'Inter', sans-serif;
+    gap: 15px;
+}
+
+.testimonial-line {
+    width: 40px;
+    height: 2px;
+    background-color: #e44249;
+}
+
+.testimonial-header-center {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.testimonial-title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+    color: #1a233a;
+    margin: 0 0 15px 0;
+}
+
+.testimonial-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin: 0 0 25px 0;
+}
+
+.testimonial-diamond-separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 200px;
+}
+
+.testimonial-diamond-separator::before,
+.testimonial-diamond-separator::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 1px;
+    background-color: #f1a5a8;
+}
+
+.testimonial-diamond-separator::before {
+    left: 0;
+}
+
+.testimonial-diamond-separator::after {
+    right: 0;
+}
+
+.diamond {
+    width: 8px;
+    height: 8px;
+    background-color: #e44249;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    width: 100%;
+}
+
+.testimonial-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 35px 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #b81d22;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+}
+
+.quote-icon-container {
+    margin-bottom: 15px;
+}
+
+.testimonial-card-title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a233a;
+    margin: 0 0 15px 0;
+}
+
+.testimonial-card-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.7;
+    margin: 0 0 30px 0;
+    flex: 1; /* Pushes author details to the bottom uniformly */
+    font-style: italic;
+    position: relative;
+    z-index: 2;
+}
+
+.testimonial-author-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 20px;
+    margin-top: auto;
+}
+
+.author-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.bg-red-gradient { background: linear-gradient(135deg, #b81d22, #e44249); }
+.bg-dark-gradient { background: linear-gradient(135deg, #1a233a, #2c3e50); }
+.bg-gray-gradient { background: linear-gradient(135deg, #7f8c8d, #95a5a6); }
+
+.testimonial-author {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.author-name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #1a233a;
+}
+
+.author-designation {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #888;
+}
+
+.author-stars {
+    color: #ffc107;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-top: 4px;
+}
