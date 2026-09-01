@@ -107,7 +107,7 @@ const Footer = () => {
 
                 <div className="footer-bottom">
                     <div className="copyright">
-                        © 2024 IGNIS. All rights reserved.
+                        Copyright 2019 © IGNIS CAREERS
                     </div>
                     <div className="legal-links">
                         <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Refund Policy</a>
