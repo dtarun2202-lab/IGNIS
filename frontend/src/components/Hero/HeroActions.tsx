@@ -5,7 +5,7 @@ import './Hero.css';
 const HeroActions = () => {
     return (
         <div className="hero-actions">
-            <Link to="/csr-ngo" className="action-card action-card-primary">
+            <Link to="/csr-support" className="action-card action-card-primary">
                 <div className="action-card-icon">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M12 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>

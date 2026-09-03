@@ -8,6 +8,7 @@ import SdgSection from './components/SdgSection/SdgSection';
 import TestimonialSection from './components/TestimonialSection/TestimonialSection';
 import Footer from './components/Footer/Footer';
 import OurTeam from './pages/OurTeam/OurTeam';
+import CSR from './pages/CSR/CSR';
 
 function App() {
     return (
@@ -25,6 +26,7 @@ function App() {
                         </div>
                     } />
                     <Route path="/our-team" element={<OurTeam />} />
+                    <Route path="/csr-support" element={<CSR />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </div>

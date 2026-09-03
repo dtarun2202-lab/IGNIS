@@ -1,0 +1,53 @@
+.csr-hero {
+    padding: 100px 40px;
+    background: url('../../assets/images/CSR%20support%20Background.png') no-repeat center center/cover;
+    position: relative;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.csr-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Overlay to keep text readable */
+    z-index: 1;
+}
+
+.csr-hero-container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 800px;
+}
+
+.csr-hero-title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.csr-hero-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* Base styles to push footer to bottom if page is empty */
+.csr-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.csr-content {
+    flex: 1;
+    padding: 60px 40px;
+}
