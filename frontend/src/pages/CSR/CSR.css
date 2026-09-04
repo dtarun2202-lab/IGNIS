@@ -1,43 +1,60 @@
 .csr-hero {
-    padding: 100px 40px;
-    background: url('../../assets/images/CSR%20support%20Background.png') no-repeat center center/cover;
+    background: url('../../assets/images/CSR%20support%20Background.png') no-repeat center bottom;
+    background-size: cover;
     position: relative;
-    min-height: 400px;
+    height: calc(100vh - 80px); /* Fills the current page minus navbar */
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    color: white;
+    padding: 0 8%;
 }
 
-.csr-hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Overlay to keep text readable */
-    z-index: 1;
-}
-
-.csr-hero-container {
-    position: relative;
+.csr-hero-left {
+    max-width: 550px;
     z-index: 2;
-    text-align: center;
-    max-width: 800px;
 }
 
-.csr-hero-title {
-    font-family: 'Manrope', sans-serif;
-    font-size: 56px;
-    font-weight: 700;
+.csr-subtitle-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
     margin-bottom: 20px;
 }
 
-.csr-hero-description {
+.csr-subtitle {
+    color: #b81d22;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.csr-subtitle-line {
+    width: 50px;
+    height: 2px;
+    background-color: #b81d22;
+}
+
+.csr-main-title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 56px;
+    line-height: 1.15;
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: #111;
+    letter-spacing: -0.5px;
+}
+
+.csr-red-text {
+    color: #b81d22;
+}
+
+.csr-description {
     font-family: 'Inter', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.6;
+    color: #444;
+    font-weight: 500;
 }
 
 /* Base styles to push footer to bottom if page is empty */
@@ -47,7 +64,123 @@
     min-height: 100vh;
 }
 
+.csr-programs-section {
+    width: 100%;
+    padding: 20px 8%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Lowered further */
+    z-index: 10;
+    position: relative;
+}
+
+.csr-programs-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.csr-program-card {
+    /* Glassmorphism styles */
+    background: rgba(184, 29, 34, 0.95); /* Increased red opacity */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 16px;
+    
+    /* Reduced size */
+    width: 170px;
+    height: 170px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 15px;
+    color: white;
+    
+    /* Added more depth */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15), inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+}
+
+.csr-program-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2), 0 10px 20px rgba(184, 29, 34, 0.5), inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+    background: #b81d22; /* Solid red on hover */
+}
+
+.csr-program-icon-wrapper {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.csr-program-icon-wrapper svg {
+    width: 38px;
+    height: 38px;
+    transition: transform 0.3s ease;
+}
+
+.csr-program-card:hover .csr-program-icon-wrapper svg {
+    transform: scale(1.1);
+}
+
+.csr-program-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 0;
+}
+
+@media (max-width: 1200px) {
+    .csr-programs-grid {
+        gap: 15px;
+    }
+    .csr-program-card {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 900px) {
+    .csr-programs-section {
+        margin-top: 0;
+        padding-top: 40px;
+    }
+    .csr-program-card {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 600px) {
+    .csr-program-card {
+        width: 130px;
+        height: 130px;
+        padding: 15px 10px;
+    }
+    .csr-program-icon-wrapper {
+        margin-bottom: 12px;
+    }
+    .csr-program-icon-wrapper svg {
+        width: 30px;
+        height: 30px;
+    }
+    .csr-program-title {
+        font-size: 11px;
+    }
+}
+
 .csr-content {
-    flex: 1;
-    padding: 60px 40px;
+    min-height: 50vh;
+    padding: 0;
 }
