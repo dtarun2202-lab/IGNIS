@@ -10,6 +10,7 @@ import Footer from './components/Footer/Footer';
 import OurTeam from './pages/OurTeam/OurTeam';
 import CSR from './pages/CSR/CSR';
 import Schools from './pages/Schools/Schools';
+import Contact from './pages/Contact/Contact';
 
 function App() {
     return (
@@ -29,6 +30,7 @@ function App() {
                     <Route path="/our-team" element={<OurTeam />} />
                     <Route path="/csr-support" element={<CSR />} />
                     <Route path="/for-schools" element={<Schools />} />
+                    <Route path="/contact" element={<Contact />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </div>

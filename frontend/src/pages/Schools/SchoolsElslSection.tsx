@@ -31,7 +31,7 @@ const programmeHighlights = [
 
 const SchoolsElslSection = () => {
     return (
-        <section className="elsl-section">
+        <section id="elsl" className="elsl-section">
             {/* Header */}
             <div className="elsl-header">
                 <div className="elsl-subtitle-container">

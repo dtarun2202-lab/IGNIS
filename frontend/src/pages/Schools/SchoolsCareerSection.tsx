@@ -4,7 +4,7 @@ import careerImage from '../../assets/images/ignis carrer awarness program.jpg';
 
 const SchoolsCareerSection = () => {
     return (
-        <section className="career-section">
+        <section id="career" className="career-section">
             <div className="career-header">
                 <h2 className="career-title">Ignis Career Awareness Program</h2>
                 <div className="career-divider">

@@ -4,7 +4,7 @@ import stemLabImage from '../../assets/images/STEM LAB.jpg';
 
 const SchoolsStemSection = () => {
     return (
-        <section className="stem-section">
+        <section id="stem" className="stem-section">
             <div className="stem-header">
                 <h2 className="stem-title">STEM Labs</h2>
                 <div className="stem-divider">
