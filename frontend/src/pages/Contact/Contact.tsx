@@ -24,7 +24,7 @@ const Contact = () => {
                     {/* Google Map Card */}
                     <div className="map-card">
                         <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.135246726889!2d78.4704388747424!3d17.405322983485093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9760773e7fcb%3A0xc6c429bbdb5c24eb!2sIgnis%20Careers%20Private%20Limited!5e0!3m2!1sen!2sin!4v1714496159676!5m2!1sen!2sin" 
+                            src="https://maps.google.com/maps?q=Ignis%20Careers%20Private%20Limited,%20Skill%20Avenue,%20Hyderabad&t=&z=16&ie=UTF8&iwloc=&output=embed" 
                             width="100%" 
                             height="100%" 
                             style={{ border: 0 }} 
