@@ -9,6 +9,7 @@ import TestimonialSection from './components/TestimonialSection/TestimonialSecti
 import Footer from './components/Footer/Footer';
 import OurTeam from './pages/OurTeam/OurTeam';
 import CSR from './pages/CSR/CSR';
+import Schools from './pages/Schools/Schools';
 
 function App() {
     return (
@@ -27,6 +28,7 @@ function App() {
                     } />
                     <Route path="/our-team" element={<OurTeam />} />
                     <Route path="/csr-support" element={<CSR />} />
+                    <Route path="/for-schools" element={<Schools />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </div>
