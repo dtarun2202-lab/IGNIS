@@ -64,6 +64,91 @@
     min-height: 100vh;
 }
 
+.schools-programs-section {
+    width: 100%;
+    padding: 20px 8%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Fully below the hero */
+    z-index: 10;
+    position: relative;
+}
+
+.schools-programs-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.schools-program-card {
+    background: #af1116; /* Dark red solid background as requested */
+    border-radius: 8px;
+    
+    width: 300px;
+    height: 80px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: white;
+    
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.schools-program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    background: #c31318;
+}
+
+.schools-program-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.schools-program-icon-wrapper svg {
+    width: 32px;
+    height: 32px;
+}
+
+.schools-program-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 0;
+    flex: 1;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.schools-program-arrow {
+    width: 28px;
+    height: 28px;
+    background-color: white;
+    color: #af1116;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.schools-program-card:hover .schools-program-arrow {
+    transform: translateX(4px);
+}
+
 .schools-content {
     min-height: 50vh;
     padding: 0;
@@ -74,6 +159,10 @@
     .schools-hero {
         background: url('../../assets/images/for%20schools%20background.png') no-repeat center center;
         background-size: cover;
+    }
+    .schools-programs-section {
+        margin-top: 0;
+        padding-top: 40px;
     }
 }
 
@@ -97,5 +186,10 @@
         color: #000;
         font-weight: 800;
         text-shadow: 0 0 15px rgba(255,255,255,0.9), 0 0 8px rgba(255,255,255,0.8);
+    }
+    .schools-program-card {
+        width: 100%;
+        max-width: 320px;
+        height: 70px;
     }
 }
