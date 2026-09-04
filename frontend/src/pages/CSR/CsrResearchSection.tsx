@@ -5,7 +5,7 @@ import swingImage from '../../assets/images/Untitled design (11).png';
 
 const CsrResearchSection = () => {
     return (
-        <section className="csr-research-section">
+        <section id="research-capacity-building" className="csr-research-section">
             <div className="csr-research-header">
                 <div className="csr-research-decorative-line">
                     <span className="csr-research-star">✦</span>

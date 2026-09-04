@@ -18,7 +18,7 @@ const CsrImpactSection = () => {
     }, []);
 
     return (
-        <section className="csr-impact-section">
+        <section id="rural-teacher-fellows" className="csr-impact-section">
             <div className="csr-research-header">
                 <div className="csr-research-decorative-line">
                     <span className="csr-research-star">✦</span>

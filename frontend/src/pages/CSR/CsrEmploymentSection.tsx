@@ -4,7 +4,7 @@ import employmentImage from '../../assets/images/employment enhance meant progra
 
 const CsrEmploymentSection = () => {
     return (
-        <section className="csr-employment-section">
+        <section id="employment-enhancement" className="csr-employment-section">
             <div className="csr-research-header">
                 <div className="csr-research-decorative-line">
                     <span className="csr-research-star">✦</span>

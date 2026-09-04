@@ -4,7 +4,7 @@ import lifeSkillsImage from '../../assets/images/life skills for girls.jpg';
 
 const CsrLifeSkillsSection = () => {
     return (
-        <section className="csr-life-skills-section">
+        <section id="life-skills-girls" className="csr-life-skills-section">
             <div className="csr-research-header">
                 <div className="csr-research-decorative-line">
                     <span className="csr-research-star">✦</span>

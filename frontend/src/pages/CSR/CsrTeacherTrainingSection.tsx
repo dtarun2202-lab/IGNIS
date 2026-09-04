@@ -4,7 +4,7 @@ import teacherTrainingImage from '../../assets/images/Teacher Training for Parti
 
 const CsrTeacherTrainingSection = () => {
     return (
-        <section className="csr-teacher-training-section">
+        <section id="teacher-training" className="csr-teacher-training-section">
             <div className="csr-research-header">
                 <div className="csr-research-decorative-line">
                     <span className="csr-research-star">✦</span>
