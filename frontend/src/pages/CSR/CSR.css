@@ -152,6 +152,10 @@
 }
 
 @media (max-width: 900px) {
+    .csr-hero {
+        background: url('../../assets/images/CSR%20Support%20background%20-%20responsive.png') no-repeat center center;
+        background-size: cover;
+    }
     .csr-programs-section {
         margin-top: 0;
         padding-top: 40px;
@@ -163,6 +167,26 @@
 }
 
 @media (max-width: 600px) {
+    .csr-hero {
+        padding: 0 5%;
+        background-position: center;
+    }
+    .csr-hero-left {
+        padding: 10px 0;
+    }
+    .csr-main-title {
+        font-size: 32px;
+        line-height: 1.2;
+        color: #000;
+        font-weight: 900;
+        text-shadow: 0 0 20px rgba(255,255,255,0.9), 0 0 10px rgba(255,255,255,0.8);
+    }
+    .csr-description {
+        font-size: 15px;
+        color: #000;
+        font-weight: 800;
+        text-shadow: 0 0 15px rgba(255,255,255,0.9), 0 0 8px rgba(255,255,255,0.8);
+    }
     .csr-program-card {
         width: 130px;
         height: 130px;

@@ -56,3 +56,12 @@
         max-width: 100%;
     }
 }
+
+@media (max-width: 600px) {
+    .csr-teacher-training-section {
+        padding: 40px 5%;
+    }
+    .csr-teacher-training-content p {
+        font-size: 14px;
+    }
+}

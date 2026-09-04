@@ -167,3 +167,17 @@
         max-width: 100%;
     }
 }
+
+@media (max-width: 600px) {
+    .csr-impact-section {
+        padding: 40px 5%;
+    }
+    
+    .csr-impact-title {
+        font-size: 26px;
+    }
+    
+    .csr-impact-list p {
+        font-size: 14px;
+    }
+}
