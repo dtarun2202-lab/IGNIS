@@ -5,6 +5,7 @@ import './Schools.css';
 import '../../components/SdgSection/SdgSection.css'; // For the Partners Banner styles
 import SchoolsElslSection from './SchoolsElslSection';
 import SchoolsStemSection from './SchoolsStemSection';
+import SchoolsCareerSection from './SchoolsCareerSection';
 
 // Media Logos
 import inc42 from '../../assets/images/media-logos/inc-42.png';
@@ -132,6 +133,7 @@ const Schools = () => {
             <SchoolsElslSection />
             
             <SchoolsStemSection />
+            <SchoolsCareerSection />
             
             <Footer />
         </div>
