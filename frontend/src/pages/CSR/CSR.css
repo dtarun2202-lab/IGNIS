@@ -184,3 +184,14 @@
     min-height: 50vh;
     padding: 0;
 }
+
+/* Reset partners banner styles for CSR page */
+.csr-partners-banner {
+    position: relative !important;
+    bottom: auto !important;
+    left: auto !important;
+    right: auto !important;
+    margin: 40px auto 60px auto;
+    max-width: 1200px;
+    width: 90%;
+}
