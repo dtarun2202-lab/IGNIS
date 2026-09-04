@@ -2,6 +2,22 @@ import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 import './Schools.css';
+import '../../components/SdgSection/SdgSection.css'; // For the Partners Banner styles
+import SchoolsElslSection from './SchoolsElslSection';
+import SchoolsStemSection from './SchoolsStemSection';
+
+// Media Logos
+import inc42 from '../../assets/images/media-logos/inc-42.png';
+import edtech from '../../assets/images/media-logos/edu-tech-review.jpg';
+import et from '../../assets/images/media-logos/economic-times.webp';
+import bw from '../../assets/images/media-logos/BW-education.png';
+import yourstory from '../../assets/images/media-logos/your-story.png';
+import tt from '../../assets/images/media-logos/Telangana-Today.png';
+import manorama from '../../assets/images/media-logos/On-Manorama.png';
+import bline from '../../assets/images/media-logos/Business-Line.jpg';
+import bstandard from '../../assets/images/media-logos/Business-Standard.png';
+import cnbc from '../../assets/images/media-logos/cbnc.png';
+import etv from '../../assets/images/media-logos/etv.jpg';
 
 const programs = [
     {
@@ -70,12 +86,53 @@ const Schools = () => {
                 </div>
             </section>
             
-            {/* Additional content will go here */}
-            
-            <div className="schools-content">
-                {/* Spacer for now */}
+            <div className="media-recognition-banner csr-partners-banner" style={{ marginTop: '40px' }}>
+                <div className="media-header" style={{ justifyContent: 'center' }}>
+                    <h3 className="media-title" style={{ flex: 'none' }}>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#e44249" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="leaf-icon left-leaf"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+                        IGNIS IN MEDIA
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#e44249" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="leaf-icon right-leaf"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+                    </h3>
+                </div>
+                
+                <div className="media-carousel-wrapper">
+                    <div className="carousel-track">
+                        <div className="logo-group">
+                            {/* First set of logos */}
+                            <img src={inc42} alt="Inc42" />
+                            <img src={edtech} alt="EdTechReview" className="logo-edtech" />
+                            <img src={et} alt="Economic Times" className="logo-et" />
+                            <img src={bw} alt="BW Education" />
+                            <img src={yourstory} alt="YourStory" />
+                            <img src={tt} alt="Telangana Today" />
+                            <img src={manorama} alt="On Manorama" className="logo-manorama" />
+                            <img src={bline} alt="Business Line" />
+                            <img src={bstandard} alt="Business Standard" />
+                            <img src={cnbc} alt="CNBC" />
+                            <img src={etv} alt="ETV" />
+                        </div>
+                        <div className="logo-group">
+                            {/* Second set of logos for seamless infinite scrolling */}
+                            <img src={inc42} alt="Inc42" />
+                            <img src={edtech} alt="EdTechReview" className="logo-edtech" />
+                            <img src={et} alt="Economic Times" className="logo-et" />
+                            <img src={bw} alt="BW Education" />
+                            <img src={yourstory} alt="YourStory" />
+                            <img src={tt} alt="Telangana Today" />
+                            <img src={manorama} alt="On Manorama" className="logo-manorama" />
+                            <img src={bline} alt="Business Line" />
+                            <img src={bstandard} alt="Business Standard" />
+                            <img src={cnbc} alt="CNBC" />
+                            <img src={etv} alt="ETV" />
+                        </div>
+                    </div>
+                </div>
             </div>
-
+            
+            <SchoolsElslSection />
+            
+            <SchoolsStemSection />
+            
             <Footer />
         </div>
     );

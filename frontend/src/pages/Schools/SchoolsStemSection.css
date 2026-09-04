@@ -1,0 +1,79 @@
+.stem-section {
+    padding: 60px 8%;
+    max-width: 1400px;
+    margin: 0 auto 40px auto;
+    font-family: 'Inter', sans-serif;
+    color: #555;
+    background-color: #ffffff;
+}
+
+.stem-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.stem-title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #4a5568; /* dark greyish blue from concept */
+    margin-bottom: 15px;
+}
+
+.stem-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.stem-line {
+    width: 80px;
+    height: 1px;
+    background-color: #8c736d; /* matching the brownish line */
+}
+
+.stem-diamond {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stem-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.stem-text p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #718096; /* grey text */
+    margin-bottom: 25px;
+}
+
+.stem-text p:last-child {
+    margin-bottom: 0;
+}
+
+.stem-image-wrapper {
+    width: 100%;
+}
+
+.stem-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+@media (max-width: 900px) {
+    .stem-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .stem-title {
+        font-size: 28px;
+    }
+}
