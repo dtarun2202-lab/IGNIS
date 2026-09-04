@@ -37,7 +37,7 @@ body {
 }
 
 .navbar-logo-img {
-    height: 45px; /* Reduced further to make navbar smaller */
+    height: 55px; /* Increased slightly per request */
     object-fit: contain;
 }
 
