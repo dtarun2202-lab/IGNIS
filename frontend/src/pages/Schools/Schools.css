@@ -157,7 +157,7 @@
 /* Responsive adjustments matching CSR page */
 @media (max-width: 900px) {
     .schools-hero {
-        background: url('../../assets/images/for%20schools%20background.png') no-repeat center center;
+        background: url('../../assets/images/for%20schools%20background-responsive.png') no-repeat center center;
         background-size: cover;
     }
     .schools-programs-section {

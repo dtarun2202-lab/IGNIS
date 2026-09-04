@@ -1,6 +1,6 @@
 import React from 'react';
 import './SdgSection.css';
-// import sdgBg from '../../assets/images/sdg4.png';
+import sdgBg from '../../assets/images/sdg4.png';
 import sdgMobileBg from '../../assets/images/sdg ch-1.png';
 
 // Media Logos
@@ -33,7 +33,7 @@ const SdgSection = () => {
         <section className="sdg-section home-snap-section">
             <div 
                 className="sdg-bg-image desktop-sdg-bg"
-                style={{ backgroundImage: `url('https://via.placeholder.com/1200x600.png?text=SDG+Background+Missing')` }}
+                style={{ backgroundImage: `url(${sdgBg})` }}
             ></div>
 
             <img 
@@ -44,7 +44,6 @@ const SdgSection = () => {
 
             <div className="sdg-container">
                 <div className="sdg-text-content">
-                    <span className="sdg-subtitle">OUR IMPACT</span>
                     <h2 className="sdg-title">Beyond Classrooms,<br />Our Connections</h2>
                     <div className="sdg-separator"></div>
                     <p className="sdg-description">
