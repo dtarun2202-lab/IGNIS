@@ -19,13 +19,21 @@ const CsrImpactSection = () => {
 
     return (
         <section className="csr-impact-section">
+            <div className="csr-research-header">
+                <div className="csr-research-decorative-line">
+                    <span className="csr-research-star">✦</span>
+                </div>
+                <h2 className="csr-research-title">
+                    <span>Rural Teacher </span>
+                    <span className="csr-red-text">Fellows Programme</span>
+                </h2>
+                <div className="csr-research-decorative-line">
+                    <span className="csr-research-star">✦</span>
+                </div>
+            </div>
+
             <div className="csr-impact-container">
                 <div className="csr-impact-content">
-                    <h2 className="csr-impact-title">
-                        Rural Teacher<br/>
-                        Fellows Programme
-                    </h2>
-                    <div className="csr-impact-line"></div>
                     
                     <ul className="csr-impact-list">
                         <li>

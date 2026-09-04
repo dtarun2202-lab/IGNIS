@@ -1,6 +1,6 @@
 import React from 'react';
 import './SdgSection.css';
-import sdgBg from '../../assets/images/sdg4.png';
+// import sdgBg from '../../assets/images/sdg4.png';
 import sdgMobileBg from '../../assets/images/sdg ch-1.png';
 
 // Media Logos
@@ -33,7 +33,7 @@ const SdgSection = () => {
         <section className="sdg-section home-snap-section">
             <div 
                 className="sdg-bg-image desktop-sdg-bg"
-                style={{ backgroundImage: `url(${sdgBg})` }}
+                style={{ backgroundImage: `url('https://via.placeholder.com/1200x600.png?text=SDG+Background+Missing')` }}
             ></div>
 
             <img 

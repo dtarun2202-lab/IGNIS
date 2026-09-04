@@ -4,6 +4,10 @@ import Footer from '../../components/Footer/Footer';
 import './CSR.css';
 import '../../components/SdgSection/SdgSection.css'; // For the Partners Banner styles
 import CsrImpactSection from './CsrImpactSection';
+import CsrResearchSection from './CsrResearchSection';
+import CsrLifeSkillsSection from './CsrLifeSkillsSection';
+import CsrEmploymentSection from './CsrEmploymentSection';
+import CsrTeacherTrainingSection from './CsrTeacherTrainingSection';
 
 // Partner Logos
 import apssdp from '../../assets/images/partners-logos/APSSDP.jpg';
@@ -16,6 +20,19 @@ import deshpande from '../../assets/images/partners-logos/deshpande-foundation.j
 import educateGirls from '../../assets/images/partners-logos/educate-girls.jpg';
 import evidya from '../../assets/images/partners-logos/evidya.png';
 import millerCenter from '../../assets/images/partners-logos/miller-center.png';
+
+// Media Logos
+import inc42 from '../../assets/images/media-logos/inc-42.png';
+import edtech from '../../assets/images/media-logos/edu-tech-review.jpg';
+import et from '../../assets/images/media-logos/economic-times.webp';
+import bw from '../../assets/images/media-logos/BW-education.png';
+import yourstory from '../../assets/images/media-logos/your-story.png';
+import tt from '../../assets/images/media-logos/Telangana-Today.png';
+import manorama from '../../assets/images/media-logos/On-Manorama.png';
+import bline from '../../assets/images/media-logos/Business-Line.jpg';
+import bstandard from '../../assets/images/media-logos/Business-Standard.png';
+import cnbc from '../../assets/images/media-logos/cbnc.png';
+import etv from '../../assets/images/media-logos/etv.jpg';
 
 const programs = [
     {
@@ -135,6 +152,57 @@ const CSR = () => {
             </div>
 
             <CsrImpactSection />
+            <CsrResearchSection />
+            <CsrLifeSkillsSection />
+            <CsrEmploymentSection />
+            <CsrTeacherTrainingSection />
+
+            <div className="media-recognition-banner csr-partners-banner">
+                <div className="media-header">
+                    <div className="media-subtitle">
+                        RECOGNITION <div className="media-line"></div>
+                    </div>
+                    <h3 className="media-title">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#e44249" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="leaf-icon left-leaf"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+                        IGNIS IN MEDIA
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#e44249" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="leaf-icon right-leaf"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+                    </h3>
+                    <div className="media-placeholder"></div>
+                </div>
+                
+                <div className="media-carousel-wrapper">
+                    <div className="carousel-track">
+                        <div className="logo-group">
+                            {/* First set of logos */}
+                            <img src={inc42} alt="Inc42" />
+                            <img src={edtech} alt="EdTechReview" className="logo-edtech" />
+                            <img src={et} alt="Economic Times" className="logo-et" />
+                            <img src={bw} alt="BW Education" />
+                            <img src={yourstory} alt="YourStory" />
+                            <img src={tt} alt="Telangana Today" />
+                            <img src={manorama} alt="On Manorama" className="logo-manorama" />
+                            <img src={bline} alt="Business Line" />
+                            <img src={bstandard} alt="Business Standard" />
+                            <img src={cnbc} alt="CNBC" />
+                            <img src={etv} alt="ETV" />
+                        </div>
+                        <div className="logo-group">
+                            {/* Second set of logos for seamless infinite scrolling */}
+                            <img src={inc42} alt="Inc42" />
+                            <img src={edtech} alt="EdTechReview" className="logo-edtech" />
+                            <img src={et} alt="Economic Times" className="logo-et" />
+                            <img src={bw} alt="BW Education" />
+                            <img src={yourstory} alt="YourStory" />
+                            <img src={tt} alt="Telangana Today" />
+                            <img src={manorama} alt="On Manorama" className="logo-manorama" />
+                            <img src={bline} alt="Business Line" />
+                            <img src={bstandard} alt="Business Standard" />
+                            <img src={cnbc} alt="CNBC" />
+                            <img src={etv} alt="ETV" />
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             
             <Footer />
