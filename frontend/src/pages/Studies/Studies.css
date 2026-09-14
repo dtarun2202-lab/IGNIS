@@ -7,7 +7,7 @@
 
 .studies-hero {
     background-color: #fcf6f7;
-    padding: 130px 40px 130px;
+    padding: 100px 40px 150px;
     text-align: center;
     position: relative;
 }
@@ -60,7 +60,7 @@
 
 .reports-container {
     max-width: 1200px;
-    margin: -80px auto 0;
+    margin: -110px auto 0;
 }
 
 .featured-report {
@@ -228,8 +228,92 @@
     transform: translateY(-2px);
 }
 
+.section-heading {
+    font-family: 'Manrope', sans-serif;
+    font-size: 32px;
+    color: #1a233a;
+    margin: 80px 0 40px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.other-reports-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.standard-report {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    border: 1px solid #eaeaea;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.standard-report:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.report-title-small {
+    font-family: 'Manrope', sans-serif;
+    font-size: 22px;
+    color: #1a233a;
+    margin: 0 0 15px 0;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.report-summary-small {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+.small-list {
+    margin-bottom: 25px;
+}
+
+.small-list li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.btn-download-outline {
+    background: transparent;
+    color: #b81d22;
+    border: 2px solid #f1a5a8;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: auto;
+    text-align: center;
+}
+
+.btn-download-outline:hover {
+    background: #fef0f1;
+    border-color: #b81d22;
+}
+
 @media (max-width: 1024px) {
     .report-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .other-reports-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -256,6 +340,10 @@
     }
     
     .report-stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .other-reports-grid {
         grid-template-columns: 1fr;
     }
 }

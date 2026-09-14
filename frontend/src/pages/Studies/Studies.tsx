@@ -64,6 +64,58 @@ const Studies = () => {
                         </div>
                     </div>
 
+                    <h3 className="section-heading">More Studies & Reports</h3>
+                    <div className="other-reports-grid">
+                        
+                        <div className="report-card standard-report">
+                            <div className="report-header">
+                                <span className="report-date">December 2017</span>
+                            </div>
+                            <h3 className="report-title-small">IGNIS LEAN DATA</h3>
+                            <p className="report-summary-small">
+                                An impact measurement study gathering preliminary data on value proposition and customer satisfaction, revealing an excellent Net Promoter Score of 54.
+                            </p>
+                            <ul className="takeaways-list small-list">
+                                <li><strong>95%</strong> reported improvement in child's quality of life</li>
+                                <li><strong>85%</strong> reported positive impact in personal growth (confidence, inquisitiveness)</li>
+                            </ul>
+                            <button className="btn-download-outline">Download PDF &darr;</button>
+                        </div>
+
+                        <div className="report-card standard-report">
+                            <div className="report-header">
+                                <span className="report-date">6-Year Study</span>
+                            </div>
+                            <h3 className="report-title-small">Intervention Study in Banapuram</h3>
+                            <p className="report-summary-small">
+                                A comprehensive study on the societal transformation of Banapuram village through English and life skills training over a 6-year period.
+                            </p>
+                            <ul className="takeaways-list small-list">
+                                <li>Gender parity achieved in school enrollments</li>
+                                <li>Higher education enrollment soared to <strong>89% (Girls)</strong> and <strong>93% (Boys)</strong></li>
+                                <li>Average age of marriage rose significantly to 19</li>
+                            </ul>
+                            <button className="btn-download-outline">Download PDF &darr;</button>
+                        </div>
+
+                        <div className="report-card standard-report">
+                            <div className="report-header">
+                                <span className="report-date">3-Year Impact</span>
+                            </div>
+                            <h3 className="report-title-small">Bridge Program Impact Report</h3>
+                            <p className="report-summary-small">
+                                Analyzing the impact of remedial instruction in foundational English and Science across schools in Hyderabad, Mumbai, and Pune.
+                            </p>
+                            <ul className="takeaways-list small-list">
+                                <li>Clear CEFR level shifts from A0 to <strong>A1/A1+</strong></li>
+                                <li><strong>70%</strong> of students can now read and interact in English</li>
+                                <li>Increased school enrollment and decreased dropouts</li>
+                            </ul>
+                            <button className="btn-download-outline">Download PDF &darr;</button>
+                        </div>
+
+                    </div>
+
                 </div>
             </section>
 
