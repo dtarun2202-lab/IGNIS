@@ -12,6 +12,7 @@ import CSR from './pages/CSR/CSR';
 import Schools from './pages/Schools/Schools';
 import Contact from './pages/Contact/Contact';
 import TermsAndConditions from './pages/TermsAndConditions/TermsAndConditions';
+import Studies from './pages/Studies/Studies';
 
 function App() {
     return (
@@ -33,6 +34,7 @@ function App() {
                     <Route path="/for-schools" element={<Schools />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+                    <Route path="/studies-reports" element={<Studies />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </div>
