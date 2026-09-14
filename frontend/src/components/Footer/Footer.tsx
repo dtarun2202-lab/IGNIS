@@ -111,7 +111,7 @@ const Footer = () => {
                         Copyright 2019 © IGNIS CAREERS
                     </div>
                     <div className="legal-links">
-                        <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Refund Policy</a>
+                        <Link to="#">Privacy Policy</Link> | <Link to="#">Terms of Use</Link> | <Link to="/terms-and-conditions">Terms and Conditions</Link>
                     </div>
                     <div className="made-with-love">
                         Designed with ❤️ for a better tomorrow

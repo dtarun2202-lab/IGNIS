@@ -11,6 +11,7 @@ import OurTeam from './pages/OurTeam/OurTeam';
 import CSR from './pages/CSR/CSR';
 import Schools from './pages/Schools/Schools';
 import Contact from './pages/Contact/Contact';
+import TermsAndConditions from './pages/TermsAndConditions/TermsAndConditions';
 
 function App() {
     return (
@@ -31,6 +32,7 @@ function App() {
                     <Route path="/csr-support" element={<CSR />} />
                     <Route path="/for-schools" element={<Schools />} />
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </div>
