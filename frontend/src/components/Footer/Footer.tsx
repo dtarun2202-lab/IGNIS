@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 import ignisLogo from '../../assets/logos/ignis-logo.jpg';
 
@@ -44,10 +45,10 @@ const Footer = () => {
                             <span className="accordion-icon">{openSection === 'about' ? '−' : '+'}</span>
                         </h4>
                         <ul className="accordion-content">
-                            <li><a href="#">Who We Are</a></li>
-                            <li><a href="#">What We Do</a></li>
-                            <li><a href="#">Our Impact</a></li>
-                            <li><a href="#">Careers</a></li>
+                            <li><Link to="/">Who We Are</Link></li>
+                            <li><Link to="/for-schools">What We Do</Link></li>
+                            <li><Link to="/#impact">Our Impact</Link></li>
+                            <li><Link to="/our-team">Careers</Link></li>
                         </ul>
                     </div>
 
@@ -57,10 +58,10 @@ const Footer = () => {
                             <span className="accordion-icon">{openSection === 'focus' ? '−' : '+'}</span>
                         </h4>
                         <ul className="accordion-content">
-                            <li><a href="#">SDG Goals</a></li>
-                            <li><a href="#">Programs</a></li>
-                            <li><a href="#">Initiatives</a></li>
-                            <li><a href="#">Get Involved</a></li>
+                            <li><Link to="/#sdg">SDG Goals</Link></li>
+                            <li><Link to="/csr-support">Programs</Link></li>
+                            <li><Link to="/csr-support">Initiatives</Link></li>
+                            <li><Link to="/contact">Get Involved</Link></li>
                         </ul>
                     </div>
 
@@ -70,10 +71,10 @@ const Footer = () => {
                             <span className="accordion-icon">{openSection === 'resources' ? '−' : '+'}</span>
                         </h4>
                         <ul className="accordion-content">
-                            <li><a href="#">News & Stories</a></li>
-                            <li><a href="#">Reports & Publications</a></li>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#">Media Kit</a></li>
+                            <li><Link to="#">News & Stories</Link></li>
+                            <li><Link to="#">Reports & Publications</Link></li>
+                            <li><Link to="#">Events</Link></li>
+                            <li><Link to="#">Media Kit</Link></li>
                         </ul>
                     </div>
 
