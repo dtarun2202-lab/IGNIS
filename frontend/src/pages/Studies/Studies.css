@@ -7,7 +7,7 @@
 
 .studies-hero {
     background-color: #fcf6f7;
-    padding: 100px 40px 150px;
+    padding: 80px 40px 170px;
     text-align: center;
     position: relative;
 }
@@ -60,7 +60,7 @@
 
 .reports-container {
     max-width: 1200px;
-    margin: -110px auto 0;
+    margin: -140px auto 0;
 }
 
 .featured-report {
