@@ -20,8 +20,37 @@ const TeamSection = () => {
                     </div>
                 </div>
 
-                <div className="team-carousel-placeholder">
-                    {/* Team cards will be added here later as requested */}
+                <div className="team-carousel-wrapper">
+                    <button className="carousel-btn prev-btn">❮</button>
+                    
+                    <div className="team-cards-container">
+                        {[1, 2, 3, 4].map((index) => (
+                            <div className="team-card" key={index}>
+                                <div className="team-card-top"></div>
+                                <div className="team-card-image-wrapper">
+                                    <div className="team-card-image-placeholder"></div>
+                                </div>
+                                <div className="team-card-bottom">
+                                    <h3 className="team-card-name">Name Placeholder {index}</h3>
+                                    <p className="team-card-role">Role Placeholder</p>
+                                    <div className="team-card-social">
+                                        <div className="social-link"><span className="icon-in">in</span> username</div>
+                                        <div className="social-link"><span className="icon-mail">✉</span> email@ignis.org</div>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    <button className="carousel-btn next-btn">❯</button>
+                </div>
+                
+                <div className="carousel-indicators">
+                    <span className="indicator active"></span>
+                    <span className="indicator"></span>
+                    <span className="indicator"></span>
+                    <span className="indicator"></span>
+                    <span className="indicator"></span>
                 </div>
             </div>
         </section>

@@ -12,7 +12,7 @@ const OurTeam = () => {
     return (
         <div className="page-container">
             <Navbar />
-            <div style={{ paddingTop: '80px', minHeight: 'calc(100vh - 400px)' }}>
+            <div style={{ minHeight: 'calc(100vh - 400px)' }}>
                 <TeamSection />
             </div>
             <Footer />

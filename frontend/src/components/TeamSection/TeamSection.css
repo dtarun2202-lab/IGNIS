@@ -1,5 +1,5 @@
 .team-section {
-    padding: 80px 40px;
+    padding: 160px 40px 80px 40px;
     background-color: #fafafa;
     position: relative;
     /* Adding a faint red dot pattern background similar to the design */
@@ -93,11 +93,174 @@
     z-index: 1;
 }
 
-.team-carousel-placeholder {
-    height: 350px;
+.team-carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.team-cards-container {
+    display: flex;
+    gap: 30px;
+    overflow: hidden;
+    width: 100%;
+    padding: 20px 0;
+    justify-content: flex-start;
+    /* Create fading effect on the right edge */
+    mask-image: linear-gradient(to right, black 85%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
+}
+
+.team-card {
+    background: #fff;
+    border-radius: 16px;
+    width: 300px;
+    min-width: 300px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-card-top {
+    background-color: #a81c1c; /* Deep red */
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    height: 120px;
     width: 100%;
 }
 
+.team-card-image-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: -75px;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.team-card-image-placeholder {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #eee;
+    border: 6px solid #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.team-card-bottom {
+    padding: 0 20px 30px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.team-card-name {
+    color: #e44249;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    margin: 0 0 5px 0;
+}
+
+.team-card-role {
+    color: #444;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0 0 30px 0;
+}
+
+.team-card-social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: auto;
+    padding-left: 10px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: #555;
+    font-weight: 500;
+}
+
+.icon-in {
+    color: #b81d22;
+    font-weight: 900;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+
+.icon-mail {
+    color: #b81d22;
+    font-size: 16px;
+}
+
+.carousel-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #b81d22;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(184, 29, 34, 0.4);
+    flex-shrink: 0;
+    font-size: 16px;
+    transition: background-color 0.2s;
+    z-index: 10;
+}
+
+.carousel-btn:hover {
+    background-color: #8c1418;
+}
+
+.prev-btn {
+    margin-right: -10px;
+    transform: translateX(-50%);
+}
+
+.next-btn {
+    margin-left: -10px;
+    transform: translateX(50%);
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.indicator.active {
+    background-color: #b81d22;
+}
 /* Responsive Styles for Team Section */
 
 /* Tablet */
