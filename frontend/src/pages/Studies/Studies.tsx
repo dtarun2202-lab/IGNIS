@@ -21,51 +21,23 @@ const Studies = () => {
             <section className="reports-section">
                 <div className="reports-container">
                     
-                    <div className="report-card featured-report">
-                        <div className="report-header">
-                            <span className="report-date">February 2018</span>
-                            <span className="report-badge">Featured Study</span>
-                        </div>
-                        <h2 className="report-title">IGNIS LEAN DATA - HT PAREKH FOUNDATION</h2>
-                        <p className="report-summary">
-                            An in-depth impact measurement study incubated within Acumen's Lean DataSM framework to listen to parents and understand the changes observed in children post-Ignis's intervention.
-                        </p>
-                        
-                        <div className="report-stats-grid">
-                            <div className="stat-box">
-                                <span className="stat-value">90%</span>
-                                <span className="stat-label">Parents felt Ignis's intervention is "Very Important"</span>
-                            </div>
-                            <div className="stat-box">
-                                <span className="stat-value">38%</span>
-                                <span className="stat-label">Observed significant improvement in English</span>
-                            </div>
-                            <div className="stat-box">
-                                <span className="stat-value">99%</span>
-                                <span className="stat-label">Showed interest in after-school classes</span>
-                            </div>
-                            <div className="stat-box">
-                                <span className="stat-value">+33</span>
-                                <span className="stat-label">Net Promoter Score (NPS)</span>
-                            </div>
-                        </div>
-
-                        <div className="report-key-takeaways">
-                            <h3>Key Takeaways</h3>
-                            <ul className="takeaways-list">
-                                <li><strong>Impact on Child:</strong> Parents consistently agree that Ignis is positively changing their child's ability and willingness to talk in English. Ignis's program acts as a level-equaling field between government and private schools.</li>
-                                <li><strong>Holistic Development:</strong> Beyond English, parents recognized improvements in confidence, inquisitiveness, and peer-to-peer interaction.</li>
-                                <li><strong>Quality of Life:</strong> 42% of parents agreed that Ignis has "Very Much Improved" their child's quality of life.</li>
-                            </ul>
-                        </div>
-                        
-                        <div className="report-actions">
-                            <button className="btn-download">Download Full PDF &darr;</button>
-                        </div>
-                    </div>
-
-                    <h3 className="section-heading">More Studies & Reports</h3>
                     <div className="other-reports-grid">
+
+                        <div className="report-card standard-report">
+                            <div className="report-header">
+                                <span className="report-date">February 2018</span>
+                            </div>
+                            <h3 className="report-title-small">HT PAREKH FOUNDATION</h3>
+                            <p className="report-summary-small">
+                                An in-depth Lean Data impact measurement study on the changes observed in children post-Ignis's intervention.
+                            </p>
+                            <ul className="takeaways-list small-list">
+                                <li><strong>90%</strong> of parents felt Ignis's intervention is "Very Important"</li>
+                                <li><strong>38%</strong> observed significant improvement in English</li>
+                                <li><strong>99%</strong> showed interest in after-school classes</li>
+                            </ul>
+                            <button className="btn-download-outline">Download PDF &darr;</button>
+                        </div>
                         
                         <div className="report-card standard-report">
                             <div className="report-header">
